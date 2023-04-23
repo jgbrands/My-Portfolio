@@ -1,0 +1,189 @@
+nav{
+    --defaultViolet: #590080;
+    --hoverViolet: #380050;
+    background-color: black;
+    margin: 0;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: inline-block;
+    position: absolute;
+    font-weight: 900;
+    font-size: 40px;
+    left: 3%;
+    transition: color 0.3s ease;
+}
+
+.logo:hover{
+    color: var(--defaultViolet);
+    cursor: pointer;
+}
+
+.buttonBar{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 1%;
+    height: auto;
+    font-size: 0; /*Remove whitespace*/
+}
+
+.buttonBar li{
+    display: inline-block;
+    padding: 9px 0;
+}
+
+.buttonBar li a{
+    background-color: var(--defaultViolet);
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 20px; /*Remove whitespace*/
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonBar li a:hover{
+    background-color: var(--hoverViolet);
+    color: var(--hoverGrey);
+}
+
+.leftBtn{
+    border-radius: 10px 0 0 10px;
+}
+
+.rightBtn{
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+
+/* .dropdown{
+    position: relative
+}
+
+.dropdownContents{
+    position: absolute;
+    top: 100%;
+    padding: 0;
+}
+
+.dropdownContents li a{
+} */
+
+/* .buttonBar{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 0;
+}
+
+.buttonBar li{
+    display: inline-block;
+}
+
+.dropdownContents li{
+    display: block;
+}
+
+.buttonBar li a, .dropdown li a{
+    background-color: var(--defaultViolet);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    padding: 10px 30px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonBar li a:hover{
+    background-color: var(--hoverViolet);
+    color: var(--hoverGrey);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--defaultWhite);
+}
+
+.dropdownBtn{
+    z-index: 1;
+}
+
+.dropdownContents{
+    position: absolute;
+    padding: 0;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    opacity: 1;
+    z-index: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.dropdownContents li{
+    margin: 0;
+    padding: 10px 30px;
+    background-color: var(--defaultViolet);
+    transition: background-color 0.3s ease;
+}
+
+.dropdownContents li:hover{
+    background-color: var(--hoverViolet);
+}
+
+.dropdownContents li a{
+    transition: color 0.3s ease;
+}
+
+.dropdownContents li:hover a{
+    color: var(--hoverGrey);
+}
+
+.dropdownBtn:hover{
+    background-color: var(--hoverViolet);
+    color:  var(--hoverGrey);
+    border-radius: 0 10px 0 0;
+}
+
+.dropdownBtn:hover .dropdownContents{
+    opacity: 1;
+    top: 100%;
+}
+
+.leftBtn{
+    border-radius: 10px 0 0 10px;
+}
+
+.rightBtn{
+    border-radius: 0 10px 10px 0;
+}
+
+.lowestBtn{
+    border-radius: 0 0 10px 10px;
+}
+
+.active{
+    background-color: var(--hoverViolet);
+    color: var(--hoverGrey);
+} */
+
+/* nav:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
