@@ -1,1 +1,116 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="author" content="João Gabriel Fernandes Brandão">
+        <link rel="shortcut icon" href="./img/technologist.png">
+        <link rel="stylesheet" href="./css/body.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <script src="./js/script.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <a class="logo" href="#">My Portfolio</a>
+            <ul class="buttonBar">
+                <li><a class="leftBtn" href="#">Home</a></li>
+                <li><a href="#aboutSec">About</a></li>
+                <li><a href="#portfolioSec">Projects</a></li>
+                <li><a class="rightBtn" href="#contact">Contact</a></li>
+
+                <!-- <li class="dropdown">
+                    <a class="dropdownBtn rightBtn" href="#contact">Contact
+                        <ul class="dropdownContents">
+                            <li><a href="">LinkedIn</a></li>
+                            <li><a href="">GitHub</a></li>
+                        </ul>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <section id="homeSec">
+            <div class="welcomeMessage">
+                <h1>Welcome to
+                    <a href="#portfolioSec">
+                        <div class="highlight">My Portfolio</div>
+                    </a>
+                </h1>
+                <a href="#portfolioSec"><h2>Click to see my projects</h2></a>
+            </div>
+
+            <img class="welcomeImage" src="./img/circuitGif.gif" alt="circuitGif">
+        </section>
+
+        <section id="aboutSec">
+            <div class="rightSide">
+                <div class="skills">
+                    <h1>Skills:</h1>
+                    <ul class="items">
+                        <li><strong>Languages:</strong> C/C++, Java, Python, Haskell, HTML, CSS</li>
+                        <li><strong>Technologies:</strong> VSCode, Git, OpenGL, MySQL</li>
+                        <li><strong>Languages:</strong> English, Portuguese (Native), Japanese (Basic)</li>
+                    </ul>
+                </div>
+    
+                <div class="aboutMe">
+                    <h1>About me:</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;I Hi👋😁, I'm currently a Computer Science undergraduate aiming to develop my skills in the tech market as a Software Developer/Engineer. I'm particularly interested in the field of Computer Graphics and Artificial Intelligence.</p>
+                </div>
+            </div>
+            
+            <img class="stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JGBRANDS&show_icons=true&theme=radical" alt="Stats">
+        </section>
+
+        <section id="portfolioSec">
+            <div id="projectsTitle" class="container">
+                <div class="contents">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+    
+            <div class="portfolio">
+                <div class="project">
+                    <a href="./html/project1.html">
+                        <div class="cover">
+                            <div class="caption">Raycaster Engine</div>
+                        </div>
+                        <img src="./img/raycasterImage.png" alt="Project 1">
+                    </a>
+                </div>
+    
+                <div class="project">
+                    <a href="./html/project2.html">
+                        <div class="cover">
+                            <div class="caption">Genetic Algorithm</div>
+                        </div>
+                        <img id="geneticAlgorithmImg" src="./img/routeFindingImage.png" alt="Project 2">
+                    </a>
+                </div>
+    
+                <div class="project">
+                    <a href="./html/project3.html">
+                        <div class="cover">
+                            <div class="caption">My Portfolio</div>
+                        </div>
+                        <img id="myPortfolioImg" src="./img/myPortfolio.png" alt="Project 3">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <h3>Contact</h3>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/jgbrands/" target="_blank">
+                    <img class="linkedInIcon" src="./img/linkedinIcon.png" alt="linkedInIcon">
+                </a>
+                <div class="separator">|</div>
+                <a href="https://github.com/jgbrands" target="_blank">
+                    <img class="githubIcon" src="./img/githubIcon.png" alt="gitHubIcon">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
