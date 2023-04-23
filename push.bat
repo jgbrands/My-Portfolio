@@ -1,1 +1,2 @@
-git add . && git commit -m "Setting up Pages" && git push origin main
+set /p message="Commit Message: "
+git add . && git commit -m "$message$" && git push origin main
