@@ -46,14 +46,20 @@ section{
     margin-right: auto;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contents{
+    padding: 40px 80px;
+}
+
+.title{
+    padding: 0;
 }
 
 #projectsTitle{
     margin-bottom: 40px;
-}
-
-.contents{
-    padding: 10px 40px;
 }
 
 #homeSec{
@@ -75,14 +81,21 @@ section{
     display: block;
 }
 
-#homeSec .welcomeImage{
+#homeSec .welcomeImg{
     display: inline-block;
     position: absolute;
-    right: 15%;
+    top: 20%;
+    right: 12%;
     margin: 0;
     padding: 0;
-    width: 450px;
-    height: 450px;
+    height: auto;
+    width: clamp(100px, 30%, 600px);
+}
+
+@media screen and (max-width: 1200px){
+    #homeSec .welcomeImg{
+        display: none;
+    }
 }
 
 #homeSec .highlight{
@@ -121,18 +134,17 @@ img{
 
 .stdBtn{
     background-color: var(--defaultViolet);
-    border: none;
     color: var(--defaultWhite);
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
-    display: block;
     border-radius: 10px;
     margin: 20px 0;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
 }
 
 .stdBtn:hover{
@@ -140,13 +152,12 @@ img{
     color: var(--hoverGrey);
 }
 
-
 #aboutSec{
     background-image: linear-gradient(var(--defaultViolet), var(--hoverViolet));
     position: relative;
 }
 
-.rightSide{
+.leftSide{
     display: flex;
     flex-direction: column;
     width: 55%;
@@ -156,6 +167,14 @@ img{
     margin-bottom: 40px;
     position: relative;
     left: 20%;
+}
+
+#resumeBtn{
+    position: relative;
+    left: 20%;
+    margin: 0;
+    width: 200px;
+    box-shadow: 0 0 5px 0 black;
 }
 
 .aboutMe h1, p{
@@ -178,17 +197,6 @@ img{
 
 .skills li{
     list-style: "> ";
-}
-
-.stats{
-    position: absolute;
-    right: 10%;
-    top: 25%;
-    margin: 0;
-    padding: 0;
-    height: 350px;
-    width: 350px;
-    border-radius: 0;
 }
 
 .portfolio{
@@ -225,8 +233,6 @@ img{
     height: 100%;
     width: auto;
 }
-
-
 
 #geneticAlgorithmImg{
     position: absolute;
@@ -278,6 +284,7 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 10%;
 }
 
 footer h3{
